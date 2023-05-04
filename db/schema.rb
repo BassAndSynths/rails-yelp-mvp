@@ -25,8 +25,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_04_171607) do
     t.datetime "updated_at", null: false
     t.text "content"
     t.integer "rating"
-    t.integer "restaurant_id_id"
-    t.index ["restaurant_id_id"], name: "index_reviews_on_restaurant_id_id"
+    t.integer "restaurant_id"
+    t.index ["restaurant_id"], name: "index_reviews_on_restaurant_id"
   end
 
 end
